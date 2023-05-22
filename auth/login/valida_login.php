@@ -1,7 +1,7 @@
 <?php
 
-    require_once("../../backend/usuario/model/usuario.php");
-    require_once("../../backend/usuario/model/usuariodao.php");
+    require_once("../../backend/usuario/model/usuario.html");
+    require_once("../../backend/usuario/model/usuariodao.html");
 
     $email_login = $_POST['email'];
     $senha_login = md5($_POST['senha']);
@@ -22,7 +22,7 @@
 
 
     $_SESSION["Logado"] = $nome[0];
-    header("location: ../../view/main.php");
+    header("location: ../../view/main.html");
 
 
 
@@ -54,7 +54,7 @@
 
 
     // session_start();
-    // require_once("../database/configDB.php");
+    // require_once("../database/configDB.html");
 
     // if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
     //     $email_login = $_POST['email'];
@@ -72,17 +72,17 @@
     //         $_SESSION['nome'] = $nome;
     //         $_SESSION['perfil'] = $registros_login['perfil'];
     //         $_SESSION['Sucesso_Login'] = "Logado com Sucesso!!";
-    //         header("location: ../index.php?msgSucesso=SucessoLogin");
+    //         header("location: ../index.html?msgSucesso=SucessoLogin");
     //     } else {
     //         unset($_SESSION['nome']);
     //         unset($_SESSION['senha']);
-    //         header("location: ../index.php?msg=Erro ao entrar");
+    //         header("location: ../index.html?msg=Erro ao entrar");
 
     //         $_SESSION['Error_Login'] = "Tente novamente ou fale com o administrador";
-    //         header("location: ../index.php?msg=Erro ao entrar");
+    //         header("location: ../index.html?msg=Erro ao entrar");
     //     }
     // } else {
-    //     header("location: ../index.php?msg=Erro ao acessar");
+    //     header("location: ../index.html?msg=Erro ao acessar");
     // }
 
 ?>

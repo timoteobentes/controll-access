@@ -1,7 +1,7 @@
 <?php
 
-    require_once("../model/quarto.php");
-    require_once("../../../database/configDB.php");
+    require_once("../model/quarto.html");
+    require_once("../../../database/configDB.html");
 
     class QuartoDAO {
 

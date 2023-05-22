@@ -1,7 +1,7 @@
 <?php
 
-    require_once("../model/newsletter.php");
-    require_once("../../../database/configDB.php");
+    require_once("../model/newsletter.html");
+    require_once("../../../database/configDB.html");
 
     class NewsletterDAO {
 

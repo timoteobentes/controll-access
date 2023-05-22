@@ -1,7 +1,7 @@
 <?php
 
-    require_once("../model/hotel.php");
-    require_once("../../../database/configDB.php");
+    require_once("../model/hotel.html");
+    require_once("../../../database/configDB.html");
 
     class HotelDAO {
 

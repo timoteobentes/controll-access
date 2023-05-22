@@ -1,7 +1,7 @@
 <?php
 
-    require_once("../../../searchhotels/admin/model/admin.php");
-    require_once("../../../searchhotels/admin/model/admindao.php");
+    require_once("../../../searchhotels/admin/model/admin.html");
+    require_once("../../../searchhotels/admin/model/admindao.html");
 
     $cpf = $_POST["cpf"];
     $senha = md5($_POST["senha"]);
@@ -21,6 +21,6 @@
     $nome = explode(" ", $nome);
 
     $_SESSION["Logado"] = $nome[0];
-    header("location: ../view/main.php");
+    header("location: ../view/main.html");
 
 ?>

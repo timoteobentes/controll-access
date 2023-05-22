@@ -1,7 +1,7 @@
 <?php
 
-    require_once("../../../backend/usuario/model/usuario.php");
-    require_once("../../../backend/usuario/model/usuariodao.php");
+    require_once("../../../backend/usuario/model/usuario.html");
+    require_once("../../../backend/usuario/model/usuariodao.html");
 
     $nome = $_POST['nome'];
 
@@ -52,10 +52,10 @@
             session_start();
         }
         $_SESSION["Cadastrado"] = $username;
-        header("location: ../../../view/main.php");
+        header("location: ../../../view/main.html");
     } else {
         $_SESSION["CadastroFail"] = "Erro ao Cadastrar!";
-        header("location: ../../../view/main.php");
+        header("location: ../../../view/main.html");
     }
 
 ?>

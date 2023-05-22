@@ -1,6 +1,6 @@
 <?php
 
-    require_once("../../../searchhotels/admin/model/admindao.php");
+    require_once("../../../searchhotels/admin/model/admindao.html");
 
     class ListLastUsers {
 

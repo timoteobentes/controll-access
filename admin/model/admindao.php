@@ -1,7 +1,7 @@
 <?php
 
-    require_once("../../../searchhotels/database/connection/configDB.php");
-    require_once("../../../searchhotels/admin/model/admin.php");
+    require_once("../../../searchhotels/database/connection/configDB.html");
+    require_once("../../../searchhotels/admin/model/admin.html");
 
     class AdminDAO {
 

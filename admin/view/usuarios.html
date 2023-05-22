@@ -1,16 +1,3 @@
-<?php
-
-    if(!isset($_SESSION)){
-        session_start();
-    }
-
-    $nome = "Login";
-    if(isset($_SESSION["Logado"])) {
-        $nome = $_SESSION["Logado"];
-    }
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,7 +9,7 @@
     <title>Painel Admin | Search Hotels</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../../components/css/painel/admin_painel.css">
+    <link rel="stylesheet" href="../../components/css/painel/usuario_painel.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
@@ -40,20 +27,20 @@
             </div>
             <div class="opcoes">
                 <ul>
+                    <li>
+                        <a href="../index.html">Dashboard</a>
+                    </li>
                     <li class="selected">
-                        <a href="./main.php">Dashboard</a>
+                        <a href="./usuarios.html">Usuários</a>
                     </li>
                     <li>
-                        <a href="./usuarios.php">Usuários</a>
+                        <a href="./quartos.html">Quartos</a>
                     </li>
                     <li>
-                        <a href="./quartos.php">Quartos</a>
-                    </li>
-                    <li>
-                        <a href="./hoteis.php">Hotéis</a>
+                        <a href="./hoteis.html">Hotéis</a>
                     </li>
                     <li class="suporte">
-                        <a href="./suporte.php">Suporte</a>
+                        <a href="./suporte.html">Suporte</a>
                     </li>
                 </ul>
             </div>
@@ -82,11 +69,11 @@
                 <div class="container-dash">
                     <div class="novos-usuarios">
                         <div class="title-user">
-                            <h2>Últimos usuários cadastrados</h2>
+                            <h2>Usuários cadastrados</h2>
                         </div>
                         <div>
-                            <table id="table-usuarios" class="table-usuarios">
-                                <!-- <thead>
+                            <table>
+                                <thead>
                                     <tr>
                                         <th>Nome</th>
                                         <th>CPF</th>
@@ -169,90 +156,8 @@
                                         <td>123.456.789-90</td>
                                         <td>01/05/2023</td>
                                     </tr>
-                                </tbody> -->
+                                </tbody>
                             </table>
-                        </div>
-                    </div>
-                    <div class="hotel-paises">
-                        <div class="hotel-famosos">
-                            <div>
-                                <h2>Hotéis + selecionados</h2>
-                            </div>
-                            <div>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Nome</th>
-                                            <th>CNPJ</th>
-                                            <th>Data de Cadastro</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pax hotel</td>
-                                            <td>12.345.678/0001-90</td>
-                                            <td>01/05/2023</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Test hotel</td>
-                                            <td>12.345.678/0001-90</td>
-                                            <td>01/05/2023</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Teste hotel</td>
-                                            <td>12.345.678/0001-90</td>
-                                            <td>01/05/2023</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Hello hotel</td>
-                                            <td>12.345.678/0001-90</td>
-                                            <td>01/05/2023</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Hi hotel</td>
-                                            <td>12.345.678/0001-90</td>
-                                            <td>01/05/2023</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="paises-famosos">
-                            <div>
-                                <h2>Países + selecionados</h2>
-                            </div>
-                            <div>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>País</th>
-                                            <th>-</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Brasil</td>
-                                            <td>78%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>EUA</td>
-                                            <td>59%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>França</td>
-                                            <td>36%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Espanha</td>
-                                            <td>24%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Israel</td>
-                                            <td>24%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
                         </div>
                     </div>
                 </div>

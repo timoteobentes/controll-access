@@ -1,4 +1,4 @@
-fetch("../../admin/controllers/listlastusers.php")
+fetch("../../admin/controllers/listlastusers.html")
 .then(res => res.json())
 .then(json => {
     let linha = `

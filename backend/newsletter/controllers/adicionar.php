@@ -1,7 +1,7 @@
 <?php
 
-    require_once("../../../backend/newsletter/model/newsletter.php");
-    require_once("../../../backend/newsletter/model/newsletterdao.php");
+    require_once("../../../backend/newsletter/model/newsletter.html");
+    require_once("../../../backend/newsletter/model/newsletterdao.html");
 
     $nome = $_POST['nome'];
     $email = $_POST['email'] ?? null;
@@ -19,10 +19,10 @@
             session_start();
         }
         $_SESSION["NewsOk"] = "NewsOk";
-        header("location: ../../../view/main.php");
+        header("location: ../../../view/main.html");
     } else {
         $_SESSION["NewsFail"] = "Erro ao Cadastrar!";
-        header("location: ../../../view/main.php");
+        header("location: ../../../view/main.html");
     }
 
 ?>

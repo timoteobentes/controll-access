@@ -1,7 +1,7 @@
 <?php
 
-    // require_once("../../../database/connection/configDB.php");
-    require_once("usuario.php");
+    // require_once("../../../database/connection/configDB.html");
+    require_once("usuario.html");
 
     class connectDB {
 
